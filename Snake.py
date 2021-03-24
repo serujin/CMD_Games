@@ -189,7 +189,7 @@ class Game:
         end_text += ''
         cls()
         print(end_text)
-        input('\n\nPress any key to exit')
+        input('\n\nPress enter to exit\n\n')
 
 
 Game()
