@@ -190,6 +190,6 @@ class Game:
         cls()
         print(end_text)
         input('\n\nPress enter to exit\n\n')
-
+        quit()
 
 Game()
