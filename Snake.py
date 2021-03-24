@@ -6,8 +6,8 @@ import time
 
 def cls():
     os.system('cls')
-    
-    
+
+
 def get_change(difficulty):
     to_return = random.randint(1, 80) / 10000
     if difficulty - to_return < 0:
@@ -149,7 +149,6 @@ class Game:
             next_position = self.game_map[self.last_positions[0][1]][next_x]
         if next_position == self.WALL or next_position == self.BODY:
             self.end_game()
-            quit()
 
     def update(self):
         self.move(self.last_direction)
@@ -190,6 +189,7 @@ class Game:
         end_text += ''
         cls()
         print(end_text)
+        input('\n\nPress any key to exit')
 
 
 Game()
